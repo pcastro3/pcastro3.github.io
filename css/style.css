@@ -1,0 +1,52 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  margin: 0;
+  background: black; }
+
+.photo {
+  width: 50rem;
+  height: 60rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: column; }
+
+.pic {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  height: 70vh; }
+
+.pic2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  width: 30vw;
+  height: 70vh; }
+
+.name {
+  font-family: 'Lexend Exa', sans-serif;
+  font-size: 3.01rem;
+  padding-left: 2.5vw;
+  padding: 2%;
+  display: inline-block;
+  color: #28b485;
+  background-image: linear-gradient(ro right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)); }
+
+.menu li a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row; }
+
+header {
+  background: #121212;
+  background-image: linear-gradient(to right, rgba(18, 18, 18, 0.8), rgba(0, 0, 0, 0.8)); }
+
+nav {
+  display: inline-block; }
