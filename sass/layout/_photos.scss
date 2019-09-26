@@ -1,0 +1,29 @@
+// @import "abstracts/mixins";
+
+.photo {
+  width: 50rem;
+  height: 60rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.pic {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  height: 70vh;
+}
+
+.pic2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  width: 30vw;
+  height: 70vh;
+}

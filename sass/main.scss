@@ -1,0 +1,31 @@
+@import "base/base";
+
+@import "layout/photos";
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+.name {
+  font-family: 'Lexend Exa', sans-serif;
+  font-size: 3.01rem;
+  padding-left: 2.5vw;
+  padding: 2%;
+  display: inline-block;
+  color: $color-primary-dark;
+  background-image: linear-gradient(ro right, rgba($color-primary-light, .8), rgba($color-primary-dark, .8));
+}
+
+.menu li a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+
+header {
+  background: #121212;
+  background-image: linear-gradient(to right, rgba(#121212, .8), rgba(black, .8));
+}
+
+nav {
+  display: inline-block;
+}
