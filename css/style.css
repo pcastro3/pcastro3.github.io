@@ -2,51 +2,67 @@ html {
   font-size: 62.5%; }
 
 body {
-  margin: 0;
   background: black; }
 
 .photo {
-  width: 50rem;
-  height: 60rem;
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  flex-direction: column; }
-
-.pic {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 30vw;
-  height: 70vh; }
-
-.pic2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: relative;
-  width: 30vw;
-  height: 70vh; }
-
-.name {
-  font-family: 'Lexend Exa', sans-serif;
-  font-size: 3.01rem;
-  padding-left: 2.5vw;
-  padding: 2%;
-  display: inline-block;
-  color: #28b485;
-  background-image: linear-gradient(ro right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)); }
-
-.menu li a {
-  text-decoration: none;
-  display: flex;
-  flex-direction: row; }
+  display: grid; }
+  .photo__1 {
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+    grid-row: 2 / span 2;
+    grid-column: 2 / span 2; }
+  .photo__2 {
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+    grid-row: 2 / 3;
+    grid-column: 2 / span 2; }
 
 header {
   background: #121212;
   background-image: linear-gradient(to right, rgba(18, 18, 18, 0.8), rgba(0, 0, 0, 0.8)); }
 
-nav {
-  display: inline-block; }
+.container {
+  width: 1400px; }
+
+.top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 10rem; }
+
+.name {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  font-family: 'Muli', sans-serif;
+  font-size: 3.15rem;
+  letter-spacing: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12rem;
+  margin-bottom: .3rem;
+  color: #28b485;
+  flex-direction: column; }
+  .name__2 {
+    margin-right: 5.9rem; }
+
+.nav {
+  list-style: none;
+  display: grid;
+  align-items: center;
+  font-family: 'Lexend Exa', sans-serif;
+  letter-spacing: .2rem; }
+  .nav ul {
+    display: flex; }
+  .nav__items li a {
+    font-size: 2.1rem;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    padding-right: 2rem;
+    padding-left: 3rem;
+    letter-spacing: .3rem; }
+    .nav__items li a:hover {
+      color: #7ed56f;
+      transition: all .6s; }
