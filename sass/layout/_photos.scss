@@ -1,28 +1,29 @@
-// @import "abstracts/mixins";
-
 .photo {
   display: grid;
+  margin-top: 10rem;
+  margin-right: 50rem;
   // object-fit: fill;
-  // height: 10rem;
-  // width: 10rem;
+  height: 85vh;
+  width: 85vw;
+  grid-template-columns: repeat(2, minmax(150px, 2fr));
+  grid-template-rows: repeat(auto-fit, minmax(150px, 350px));
 
   &__1 {
-    // grid-template-rows: repeat(auto-fit, minmax(150px, 350px));
+
     object-fit: fill;
     height: 100%;
     width: 100%;
     grid-row: 2 / span 2;
-    grid-column: 2 / span 2;
+    // grid-column: 2 / span 2;
   }
 
   &__2 {
-    // grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    // display: grid;
+
     object-fit: fill;
     height: 100%;
     width: 100%;
     grid-row: 2 / 3;
-    grid-column: 2 / span 2;
+    // grid-column: 2 / span 2;
   }
 
 

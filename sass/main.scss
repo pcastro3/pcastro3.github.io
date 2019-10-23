@@ -14,17 +14,20 @@ header {
   width: 1400px;
   // margin: 30px auto;
   // display: grid;
-
-  // grid-template-rows: repeat(4, 350px);
-  // grid-template-columns: repeat(4, 350px);
+  //
+  //
+  // grid-template-rows: 150px 750px;
+  // grid-template-columns: repeat(2, 350px);
 
 
 }
 
 .top {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 600px 1fr;
   height: 10rem;
+  margin-bottom: 8rem;
+  margin-left: -8rem;
 }
 
 .name {
@@ -36,27 +39,28 @@ header {
   letter-spacing: 1.2rem;
   align-items: center;
   justify-content: center;
-  margin-right: 12rem;
+  margin-right: 8rem;
   margin-bottom: .3rem;
   color: $color-primary-dark;
   flex-direction: column;
+  padding-right: 8rem;
 
   &__2 {
     margin-right: 5.9rem;
   }
-
 }
 
 .nav {
-  list-style: none;
   display: grid;
   align-items: center;
-  font-family: 'Lexend Exa', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   letter-spacing: .2rem;
+  margin-left: 3rem;
 
 
   & ul {
     display: flex;
+    list-style: none;
   }
 
   &__items li a {
@@ -71,11 +75,11 @@ header {
     padding-right: 2rem;
     padding-left: 3rem;
     letter-spacing: .3rem;
+    margin-right: 2rem;
 
     &:hover {
-      color: $color-primary-light;
-      transition: all .6s;
-
+      color: grey;
+      transition: all .4s;
     }
   }
 }
