@@ -1,41 +1,43 @@
 html {
   font-size: 62.5%; }
 
-.grey {
+body {
   background: black; }
 
 .photo {
   display: grid;
-  margin-top: 10rem;
-  margin-right: 50rem;
-  height: 85vh;
-  width: 85vw;
-  grid-template-columns: repeat(2, minmax(150px, 2fr));
-  grid-template-rows: repeat(auto-fit, minmax(150px, 350px)); }
+  width: 99vw;
+  grid-template-rows: repeat(3, 65vw); }
+  .photo__area {
+    width: 100%;
+    height: 100%;
+    margin: auto; }
   .photo__1 {
-    object-fit: fill;
-    height: 100%;
+    object-fit: cover;
     width: 100%;
-    grid-row: 2 / span 2; }
+    height: 100%; }
   .photo__2 {
-    object-fit: fill;
-    height: 100%;
+    object-fit: cover;
     width: 100%;
-    grid-row: 2 / 3; }
+    height: 100%; }
+  .photo__3 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
 
 header {
   background: #121212;
   background-image: linear-gradient(to right, rgba(18, 18, 18, 0.8), rgba(0, 0, 0, 0.8)); }
 
 .container {
-  width: 1400px; }
+  width: 100%; }
 
 .top {
   display: grid;
   grid-template-columns: 600px 1fr;
   height: 10rem;
-  margin-bottom: 8rem;
-  margin-left: -8rem; }
+  margin-bottom: 4rem;
+  margin-left: 7rem; }
 
 .name {
   display: flex;

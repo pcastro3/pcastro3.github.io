@@ -11,7 +11,7 @@ header {
 }
 
 .container {
-  width: 1400px;
+  width: 100%;
   // margin: 30px auto;
   // display: grid;
   //
@@ -26,8 +26,8 @@ header {
   display: grid;
   grid-template-columns: 600px 1fr;
   height: 10rem;
-  margin-bottom: 8rem;
-  margin-left: -8rem;
+  margin-bottom: 4rem;
+  margin-left: 7rem;
 }
 
 .name {
