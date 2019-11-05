@@ -1,5 +1,7 @@
 @import "base/base";
 
+@import "components/slideshow";
+
 @import "layout/photos";
 
 @import "abstracts/variables";
@@ -11,7 +13,7 @@ header {
 }
 
 .container {
-  width: 100%;
+  // width: 100vw;
   // margin: 30px auto;
   // display: grid;
   //
@@ -21,6 +23,9 @@ header {
 
 
 }
+
+
+// REFACTOR WIDTH, HEIGHT WITH MIXIN
 
 .top {
   display: grid;
@@ -44,9 +49,11 @@ header {
   color: $color-primary-dark;
   flex-direction: column;
   padding-right: 8rem;
+  padding-top: 1.2rem;
 
   &__2 {
     margin-right: 5.9rem;
+    padding-top: 1.6rem;
   }
 }
 
