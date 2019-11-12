@@ -1,8 +1,10 @@
 @import "base/base";
 
 @import "components/slideshow";
+@import "components/verticals";
 
 @import "layout/photos";
+@import "layout/welcome";
 
 @import "abstracts/variables";
 @import "abstracts/mixins";
@@ -63,7 +65,7 @@ header {
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: .2rem;
   margin-left: 3rem;
-
+  margin-top: 1rem;
 
   & ul {
     display: flex;
@@ -71,7 +73,7 @@ header {
   }
 
   &__items li a {
-    font-size: 2.1rem;
+    font-size: 2.4rem;
     // width: 10vw;
     // margin-right: 4rem;
     display: flex;
@@ -89,4 +91,39 @@ header {
       transition: all .4s;
     }
   }
+
+  &__drop {
+    position: relative;
+    display: inline-block;
+    // padding-bottom: 2rem;
+    z-index: 100;
+  }
+
+  &__dropdown {
+    position: absolute;
+    display: none;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  }
+
+  &__dropdown--content {
+    padding: 8px 12px;
+    color: black !important;
+    display: block;
+    margin: auto !important;
+    padding-left: -2rem !important;
+  }
+
+  &__drop:hover &__dropdown {
+    display: block;
+  }
+
+  &__dropdown--content:hover {
+    background-color: lightgrey;
+  }
+}
+
+.gold {
+  text-decoration: none;
 }

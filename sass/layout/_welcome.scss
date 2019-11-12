@@ -1,0 +1,29 @@
+.welcome {
+  width: 100%;
+  background-color: white;
+  padding-bottom: 5rem;
+  margin-top: -6.5rem;
+
+  & h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 5.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    opacity: 70%;
+    padding-top: 6rem;
+
+  }
+
+  &__statement {
+    margin-top: 4rem;
+    margin-right: 22rem;
+    margin-left: 22rem;
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+    color: black;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    line-height: 7rem;
+  }
+}
