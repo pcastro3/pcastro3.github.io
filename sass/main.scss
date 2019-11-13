@@ -127,3 +127,25 @@ header {
 .gold {
   text-decoration: none;
 }
+
+.tdor {
+  display: flex;
+  justify-content: center;
+
+  color: $color-primary-light;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 4rem;
+  font-style: italic;
+  letter-spacing: 1.5rem;
+  // text-shadow: 1px 1px 4px lightgrey;
+  margin-top: -3rem;
+  padding-bottom: 3rem;
+}
+ .about {
+   background-color: white;
+   color: black;
+   font-size: 4rem;
+   font-family: 'Lexend Exa', sans-serif;
+   padding: 8rem;
+
+ }
