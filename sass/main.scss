@@ -1,33 +1,18 @@
 @import "base/base";
 
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
 @import "components/slideshow";
 @import "components/verticals";
+@import "components/nav";
 
 @import "layout/photos";
 @import "layout/welcome";
 
-@import "abstracts/variables";
-@import "abstracts/mixins";
-
-header {
-  background: #121212;
-  background-image: linear-gradient(to right, rgba(#121212, .8), rgba(black, .8));
-}
-
-.container {
-  // width: 100vw;
-  // margin: 30px auto;
-  // display: grid;
-  //
-  //
-  // grid-template-rows: 150px 750px;
-  // grid-template-columns: repeat(2, 350px);
 
 
-}
-
-
-// REFACTOR WIDTH, HEIGHT WITH MIXIN
+@import "pages/about";
 
 .top {
   display: grid;
@@ -59,71 +44,6 @@ header {
   }
 }
 
-.nav {
-  display: grid;
-  align-items: center;
-  font-family: 'Josefin Sans', sans-serif;
-  letter-spacing: .2rem;
-  margin-left: 3rem;
-  margin-top: 1rem;
-
-  & ul {
-    display: flex;
-    list-style: none;
-  }
-
-  &__items li a {
-    font-size: 2.4rem;
-    // width: 10vw;
-    // margin-right: 4rem;
-    display: flex;
-    text-decoration: none;
-    color: white;
-    // color: #818ED2;
-    justify-content: center;
-    padding-right: 2rem;
-    padding-left: 3rem;
-    letter-spacing: .3rem;
-    margin-right: 2rem;
-
-    &:hover {
-      color: grey;
-      transition: all .4s;
-    }
-  }
-
-  &__drop {
-    position: relative;
-    display: inline-block;
-    // padding-bottom: 2rem;
-    z-index: 100;
-  }
-
-  &__dropdown {
-    position: absolute;
-    display: none;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
-  }
-
-  &__dropdown--content {
-    padding: 8px 12px;
-    color: black !important;
-    display: block;
-    margin: auto !important;
-    padding-left: -2rem !important;
-  }
-
-  &__drop:hover &__dropdown {
-    display: block;
-  }
-
-  &__dropdown--content:hover {
-    background-color: lightgrey;
-  }
-}
-
 .gold {
   text-decoration: none;
 }
@@ -132,7 +52,7 @@ header {
   display: flex;
   justify-content: center;
 
-  color: $color-primary-light;
+  color: $color-primary-dark;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 4rem;
   font-style: italic;
@@ -141,11 +61,21 @@ header {
   margin-top: -3rem;
   padding-bottom: 3rem;
 }
- .about {
-   background-color: white;
-   color: black;
-   font-size: 4rem;
-   font-family: 'Lexend Exa', sans-serif;
-   padding: 8rem;
 
- }
+.contact {
+  font-family: "Muli", sans-serif;
+  font-size: 2.7rem;
+  margin-top: 11rem;
+}
+
+.insta {
+  display: flex;
+
+  & a {
+    text-decoration: none;
+    margin-left: 2.8rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3.5rem;
+  }
+
+}
