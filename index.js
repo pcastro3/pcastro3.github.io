@@ -108,7 +108,7 @@ function slideshowSwitch(slideshow,index,auto){
       ease:Power3.easeInOut
     });
 
-    TweenMax.staggerFromTo(newSlideElements,0.1,{alpha:0,y:60},{alpha:1,y:0,ease:Power3.easeOut,force3D:true,delay:0.6},0.1,function(){
+    TweenMax.staggerFromTo(newSlideElements,0.5,{alpha:0,y:60},{alpha:1,y:0,ease:Power3.easeOut,force3D:true,delay:0.6},0.1,function(){
       newSlide.addClass('is-active').removeClass('is-new');
       activeSlide.removeClass('is-active');
       newSlide.css({
