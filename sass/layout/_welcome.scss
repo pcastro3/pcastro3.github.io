@@ -24,5 +24,25 @@
     font-weight: bold;
     letter-spacing: .2rem;
     line-height: 7rem;
+
+    @media (max-width: 64em) {
+      margin-right: 15rem;
+      margin-left: 15rem;
+    }
+
+    @media (max-width: 48em) {
+      margin-right: 10rem;
+      margin-left: 10rem;
+      font-size: 1.9rem;
+      line-height: 6rem;
+    }
+
+    @media (max-width: 30em) {
+      margin-right: 4rem;
+      margin-left: 5rem;
+      padding-bottom: 1rem;
+      font-size: 1.4rem;
+      line-height: 4rem;
+    }
   }
 }

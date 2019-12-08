@@ -38,17 +38,55 @@
   padding-right: 8rem;
   padding-top: 1.2rem;
 
+  @media (max-width: 90em) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 80em) {
+    margin-left: -10rem;
+  }
+
+  @media (max-width: 64em) {
+    margin-left: -18rem;
+    font-size: 2rem;
+  }
+
+  @media (max-width: 48em) {
+    margin-left: -18rem;
+  }
+
+  @media (max-width: 30em) {
+    margin-left: -8.5rem;
+    width: 40rem;
+  }
+
   &__2 {
     margin-right: 5.9rem;
     padding-top: 1.6rem;
   }
 }
 
-.gold {
+
+
+.gold { //NATURAL LIGHTS
   text-decoration: none;
 }
 
-.tdor {
+.night { //NIGHT PORTRAITS
+  @media (max-width: 64em) {
+    height: 100vh;
+  }
+
+  @media (max-width: 48em) {
+    height: 100vh;
+  }
+
+  @media (max-width: 30em) {
+    height: 80vh;
+  }
+}
+
+.tdor { //EVENT PAGE
   display: flex;
   justify-content: center;
 
@@ -60,15 +98,105 @@
   // text-shadow: 1px 1px 4px lightgrey;
   margin-top: -3rem;
   padding-bottom: 3rem;
+
+  @media (max-width: 64em) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 48em) {
+    font-size: 2.1rem;
+    margin-top: 7rem;
+    padding-bottom: 0rem;
+    letter-spacing: 1rem;
+  }
+
+  @media (max-width: 30em) {
+    font-size: 1.6rem;
+    letter-spacing: .5rem;
+  }
 }
 
-.contact {
+//.event IS A PART OF TDOR
+
+.event {
+  @media (max-width: 48em) {
+    margin-top: 4rem;
+  }
+}
+
+.about { //ABOUT PAGE
+  @media (max-width: 48em) {
+    margin-top: 9rem;
+  }
+
+  &__heading {
+    @media (max-width: 30em) {
+      font-size: 5rem;
+      margin-top: -3rem;
+      letter-spacing: .3rem;
+    }
+  }
+
+  &__statement {
+    @media (max-width: 64em) {
+      padding: 5rem;
+      font-size: 2.2rem;
+      letter-spacing: .1rem;
+      margin-top: 2.5rem;
+    }
+
+    @media (max-width: 48em) {
+      padding: 1rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 30em) {
+      padding: 0rem;
+      margin-top: 8rem;
+      margin-left: -3rem;
+      margin-right: -3rem;
+      letter-spacing: 0rem;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.middle { //PROFILE PHOTO IN ABOUT PAGE
+  @media (max-width: 80em) {
+    margin-left: -7rem;
+  }
+
+  @media (max-width: 64em) {
+    margin-left: -20rem;
+  }
+
+  @media (max-width: 48em) {
+    margin-left: -33rem;
+  }
+
+  @media (max-width: 30em) {
+    margin-left: -47.5rem;
+  }
+}
+
+.contact { //CONTACT AT BOTTOM OF ABOUT PAGE
   font-family: "Muli", sans-serif;
   font-size: 2.7rem;
   margin-top: 11rem;
+
+  @media (max-width: 30em) {
+    margin-left: -1rem;
+  }
+
+  &__email {
+    @media (max-width: 30em) {
+      font-size: 2.2rem;
+      font-weight: bold;
+    }
+  }
 }
 
-.insta {
+.insta { //UNDER CONTACT
   display: flex;
 
   & a {
@@ -76,6 +204,10 @@
     margin-left: 2.8rem;
     font-family: "Josefin Sans", sans-serif;
     font-size: 3.5rem;
-  }
 
+    @media (max-width: 30em) {
+      margin-left: 1rem;
+      font-size: 2.5rem;
+    }
+  }
 }

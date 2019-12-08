@@ -5,6 +5,20 @@
   height: 100vh;
   z-index: 1;
 
+  @media (max-width: 64em) {
+    height: 93vh;
+  }
+
+  @media (max-width: 48em) {
+    margin-top: 10rem;
+    height: 69vh;
+  }
+
+  @media (max-width: 30em) {
+    margin-top: 10rem;
+    height: 43vh;
+  }
+
   .slideshow-inner {
     position: absolute;
     top: 0;
